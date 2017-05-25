@@ -1,1 +1,12 @@
-.vs/ConsoleApplication1/v14/.suo
+*.user
+*.suo
+*.apikey
+.vs/
+.fake/
+packages/
+bin/
+obj/
+Tester/
+TestResults/
+output/
+TestResult*.xml
