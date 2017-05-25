@@ -33,7 +33,7 @@ namespace ConsoleApplication1
             var vaultUrl = "";
             var secretUrl = "";
 
-            var secret = await client.GetSecretAsync(vaultUrl, secretUrl);
+            var secret = Task.Run(() => client.GetSecretAsync(vaultUrl, secretUrl)).Result;
 
             return secret.Value;
 
